@@ -27,7 +27,14 @@
         <td>{{$k->saldo_cuti}}</td>
         <td>{{$k->gaji}}</td>
         <td>{{$k->alamat}}</td>
-        <td><a href="/karyawan/{{$k->id}}/edit">Edit</a></td>
-     </tr>
+        <td>
+        <a href="/karyawan/{{$k->id}}/edit">Edit</a>
+        <form action="/karyawan/{{$k->id}}" method="POST">
+            @csrf
+            @method('delete')
+            <input type="submit" value="Delete">
+        </form>
+    </td>
+</tr>
 @endforeach
 </table> 
