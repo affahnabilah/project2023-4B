@@ -1,16 +1,18 @@
 <a href="/karyawan/create">Tambah Data</a>
 <table border ="1"> 
     <tr>
-        <th>ID</th>
-        <th>NAMA</th>
-        <th>NIK</th>
-        <th>JABATAN</th>
-        <td>JENIS KELAMIN</th>
-        <th>DIVISI</td>
-        <th>MASA KERJA</th>
-        <th>SALDO CUTI</th>
-        <th>GAJI</th>
-        <th>ALAMAT</th>
+        <th>Id</th>
+        <th>Nama</th>
+        <th>Nik</th>
+        <th>Jabatan</th>
+        <td>Jenis Kelamin</th>
+        <th>Divisi</th>
+        <th>Masa Kerja</th>
+        <th>Saldo Cuti</th>
+        <th>Gaji</th>
+        <th>Alamat</th>
+        <th>Aksi</th>
+
     </tr>
      @foreach($karyawan as $k)
     <tr>
@@ -25,6 +27,7 @@
         <td>{{$k->saldo_cuti}}</td>
         <td>{{$k->gaji}}</td>
         <td>{{$k->alamat}}</td>
+        <td><a href="/karyawan/{{$k->id}}/edit">Edit</a></td>
      </tr>
 @endforeach
 </table> 
