@@ -38,7 +38,7 @@
                  <form action="/karyawan/{{$k->id}}" method="POST">
                    @csrf
                    @method('delete')
-                  <input class="btn btn-danger" type="submit" value="Delete" onclick="confirm('sure ?')">
+                  <input class="btn btn-danger" type="submit" value="Delete">
                   </form>
             </div>
         </td>

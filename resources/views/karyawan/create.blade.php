@@ -6,8 +6,8 @@
 <h1>create karyawan</h1>
 
 <form action="/karyawan/store" method="POST">
-  @csrf
-<form>
+@csrf
+
 <div class="mb-3">
     <label for="nama" class="form-label">Nama</label>
     <input type="text" name="nama" class="form-control" id="nama" aria-describedby="emailHelp">
