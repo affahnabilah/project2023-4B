@@ -1,3 +1,8 @@
+@exstends('layouts.master')
+
+@section('content')
+
+<div class="container">
 <h1>Edit Data</h1>
 
 <form action="/karyawan/{{$karyawan->id}}" method="POST">
@@ -18,3 +23,5 @@
     <textarea name="alamat" id="" cols="30" rows="10">{{$karyawan->alamat}}</textarea><br>
     <input type="submit" name="submit" value="Update"><br> 
 </form>
+</div>
+@endsection
