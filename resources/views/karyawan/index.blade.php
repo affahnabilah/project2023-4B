@@ -1,8 +1,16 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class ="container" >
+    <div class ="container">
+        <h1 class="text-center my-4"> Data Karyawan</h1>
     <a class="btn btn-primary" href="/karyawan/create">Tambah Data</a>
+    <span style="float: right">
+     <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger" type="submit">Logout</button>
+            </form><br>
+</span>
          <table class="table">
             <head class="table-dark">
             <tr class="table-info">
