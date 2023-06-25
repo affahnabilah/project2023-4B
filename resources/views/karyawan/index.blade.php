@@ -11,7 +11,7 @@
                 <button class="btn btn-danger" type="submit">Logout</button>
             </form><br>
 </span>
-         <table class="table">
+         <table class="text-center table">
             <head class="table-dark">
             <tr class="table-info">
                 <th>Id</th>
@@ -42,12 +42,14 @@
                 <td>{{$k->alamat}}</td>
         <td>
             <div class="btn-group" role="group" aria-label="Basic example">
+                <div class="container">
                  <a class="btn btn-warning" href="/karyawan/{{$k->id}}/edit">Edit</a>
-                 <form action="/karyawan/{{$k->id}}" method="POST">
+                 <form action="/karyawan/{{$k->id}}" method="POST"></div>
+                 <div class="container">
                    @csrf
                    @method('delete')
                   <input class="btn btn-danger" type="submit" value="Delete">
-                  </form>
+                  </form></div>
             </div>
         </td>
         </tr>
