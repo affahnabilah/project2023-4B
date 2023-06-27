@@ -45,7 +45,10 @@
   
   <label for="alamat" class="form-label">Alamat</label>
     <textarea class="form-control" name="alamat" value="{{$karyawan->alamat}}"></textarea><br>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <div class="container">
     <input type="submit" name="submit" class="btn btn-info" value="Update"><br>
+
 </form>
 </div>
 @endsection
